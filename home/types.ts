@@ -12,16 +12,16 @@ export interface CarouselSlide {
 }
 
 export interface TimelineEvent {
-  year: string;
+  topic: string;
   title: string;
   description: string;
 }
 
 export enum TabOption {
   DOCUMENTATION = 'Documentation',
-  EXPERIMENTS = 'Experiments',
+  PROJECTS = 'Projects',
   MODELS = 'Models',
-  PREVIEWS = 'Previews',
+  Research = 'Research',
 }
 
 export interface ContentData {

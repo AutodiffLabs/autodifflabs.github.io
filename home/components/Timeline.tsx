@@ -11,8 +11,8 @@ const Timeline: React.FC = () => {
       <div className="max-w-4xl mx-auto px-6 relative z-10">
         <FadeIn>
           <div className="text-center mb-20">
-            <h2 className="text-3xl font-light text-gray-900">The Journey</h2>
-            <p className="text-gray-500 mt-2 font-light">From a basement script to global infrastructure.</p>
+            <h2 className="text-3xl font-light text-gray-900">Project Outcomes</h2>
+            <p className="text-gray-500 mt-2 font-light">Below are the outcomes of the reasearch and development conducted in this Project.</p>
           </div>
         </FadeIn>
 
@@ -50,14 +50,14 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ event, index, isHovered, on
         onMouseLeave={onLeave}
       >
         {/* Dot on the line */}
-        <div className={`absolute -left-[5px] md:-left-[5px] top-2 w-3 h-3 rounded-full border-2 transition-all duration-500 z-20 ${
+        <div className={`absolute -left-[5px] md:-left-[20px] top-1 w-3 h-3 rounded-full border-2 transition-all duration-500 z-20 ${
           isHovered ? 'bg-white border-sunflower-500 scale-150' : 'bg-gray-200 border-gray-200'
         }`}></div>
 
         {/* Content */}
         <div className={`transition-all duration-500 ${isHovered ? 'translate-x-2' : ''}`}>
           <span className={`text-sm font-mono mb-1 block transition-colors duration-300 ${isHovered ? 'text-sunflower-500' : 'text-gray-400'}`}>
-            {event.year}
+            {event.topic}
           </span>
           <h3 className="text-xl text-gray-900 font-normal mb-2">{event.title}</h3>
           <p className="text-gray-500 font-light max-w-md leading-relaxed">

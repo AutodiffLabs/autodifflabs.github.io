@@ -13,7 +13,7 @@ const TabSection: React.FC = () => {
       <div className="max-w-5xl mx-auto">
         <FadeIn>
           <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
-             <h3 className="text-2xl font-light text-gray-900">Explore the Platform</h3>
+             <h3 className="text-2xl font-light text-gray-900">Explore</h3>
              <div className="flex flex-wrap gap-2 justify-center">
                {Object.values(TabOption).map((tab) => (
                  <Pill 

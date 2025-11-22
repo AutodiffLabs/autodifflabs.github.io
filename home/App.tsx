@@ -5,6 +5,7 @@ import Carousel from './components/Carousel';
 import TabSection from './components/TabSection';
 import Timeline from './components/Timeline';
 import { FadeIn } from './components/ui/Library';
+import { LOGO_PATH } from './constants';
 
 const App: React.FC = () => {
   return (
@@ -22,8 +23,15 @@ const App: React.FC = () => {
           <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
             <FadeIn>
               <div className="flex items-center gap-2">
-                 <div className="w-4 h-4 bg-gray-200 rounded-full"></div>
-                 <span className="text-gray-900 font-medium text-sm">AutodiffLabs</span>
+                 <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                 <img 
+                  src= {LOGO_PATH}
+                  w = '70'
+                  alt= "ADL Logo"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-[70px] h-[70px] object-cover opacity-90"
+                />
               </div>
             </FadeIn>
             
@@ -38,7 +46,7 @@ const App: React.FC = () => {
 
             <FadeIn delay={200}>
               <p className="text-xs text-gray-300">
-                © {new Date().getFullYear()} AutodiffLabs Inc.
+                © {new Date().getFullYear()} AutodiffLabs. All rights reserved.
               </p>
             </FadeIn>
           </div>

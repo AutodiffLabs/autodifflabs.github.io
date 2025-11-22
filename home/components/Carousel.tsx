@@ -17,7 +17,7 @@ const Carousel: React.FC = () => {
 
   return (
     <section 
-      className="relative w-full h-[50vh] overflow-hidden bg-gray-100 group"
+      className="relative w-[95%] h-[50vh] mx-auto rounded-2xl overflow-hidden bg-gray-100 group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -31,6 +31,8 @@ const Carousel: React.FC = () => {
           <img 
             src={slide.imageUrl} 
             alt={slide.title}
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover opacity-90"
           />
           {/* Gradient Overlay */}
