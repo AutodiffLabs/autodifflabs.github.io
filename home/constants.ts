@@ -6,6 +6,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Projects', href: '#projects' },
   { label: 'Models', href: '#models' },
   { label: 'Research', href: '#research' },
+  { label: 'GitHub', href: 'https://github.com/AutodiffLabs' },
   { label: 'Timeline', href: '#timeline', isSpecial: true },
 ];
 
