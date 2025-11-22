@@ -50,7 +50,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
 export const TAB_CONTENT: Record<TabOption, ContentData> = {
   [TabOption.DOCUMENTATION]: {
     title: "Comprehensive Guides",
-    body: "Our documentation is built for humans. Start with the 'Timeline' programme to understand the core concepts of AutodiffLabs, or dive into the API reference for low-level graph manipulation details.",
+    body: "Check our documentation to get started, and for detailed instruction. Start with the 'Timeline' option to understand the core concepts of AutodiffLabs, or dive into the API reference for low-level graph manipulation details.",
     linkText: "Read the Docs"
   },
   [TabOption.PROJECTS]: {
