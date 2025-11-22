@@ -8,5 +8,19 @@
   <body>
     <!-- Include the script that builds the page and powers Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      // Initialize Decap CMS
+      CMS.init({
+        config: "/admin/config.yml",
+        backend: {
+          name: "github",
+          repo: "AutodiffLabs/autodifflabs.github.io",
+          branch: "main",
+          auth_scope: "repo",
+          client_id: "Ov23li8aeOf71Xru85St",
+          login: true
+        }
+      });
+    </script>
   </body>
 </html>
