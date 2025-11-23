@@ -177,7 +177,7 @@ const createSidebarDOM = (items) => {
 async function init() {
   // 1. Fetch Sidebar
   try {
-    const res = await fetch(`${DOCS_ROOT}/_sidebar.md`);
+    const res = await fetch(`${DOCS_ROOT}/sidebar.md`);
     if (!res.ok) throw new Error('Sidebar not found');
     const text = await res.text();
     
