@@ -4,10 +4,10 @@ import Hero from './components/Hero';
 import Carousel from './components/Carousel';
 import TabSection from './components/TabSection';
 import Timeline from './components/Timeline';
-import DocsPage from './pages/DocsPage'
+import DocsPage from './pages/DocsPage';
 import { FadeIn } from './components/ui/Library';
 import { LOGO_PATH } from './constants';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App: React.FC = () => {
   return (
@@ -54,7 +54,7 @@ const App: React.FC = () => {
                 <div className="flex gap-8 text-sm text-gray-400">
                   <a href="#" className="hover:text-sunflower-500 transition-colors">GitHub</a>
                   <a href="#" className="hover:text-sunflower-500 transition-colors">Twitter</a>
-                  <a href="#" className="hover:text-sunflower-500 transition-colors">Discord</a>
+                  <a href="#" className="hover:text-sunflower-500 transition-colors">Stack Overflow</a>
                   <a href="#" className="hover:text-sunflower-500 transition-colors">Privacy</a>
                 </div>
               </FadeIn>

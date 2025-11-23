@@ -18,8 +18,7 @@ export default defineConfig(({ mode }) => {
       build: {
       rollupOptions: {
         input: {
-          main: path.resolve(__dirname, 'index.html'),
-          docs: path.resolve(__dirname, 'docs.html')  // add your docs page
+          main: path.resolve(__dirname, 'index.html')
         }
       }
     }
