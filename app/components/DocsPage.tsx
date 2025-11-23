@@ -78,7 +78,7 @@ const DocsPage: React.FC = () => {
           if (!file || !currentExists) {
             const defaultFile = flatList.find(f => f.name.toLowerCase().includes('overview')) || flatList[0];
             if (defaultFile) {
-              navigate(`#/docs/${defaultFile.name}`, { replace: true });
+              navigate(`${defaultFile.name}`, { replace: true });
             }
           }
         }
