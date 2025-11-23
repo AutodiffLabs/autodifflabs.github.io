@@ -244,7 +244,8 @@ async function loadContentFromHash() {
 
   try {
       // Fix relative path issue by stripping leading slash for fetch
-      const fetchPath = `$/documentation/docs/${state.currentPath}`;
+      //const fetchPath = `$/documentation/docs/${state.currentPath}`;
+      const fetchPath = `$/documentation/docs/`;
       const res = await fetch(fetchPath);
       
       if (!res.ok) throw new Error('404');
