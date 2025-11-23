@@ -177,7 +177,7 @@ const createSidebarDOM = (items) => {
 async function init() {
   // 1. Fetch Sidebar
   try {
-    const res = await fetch(`/documentation/docs/_sidebar.md`);
+    const res = await fetch(`${DOCS_ROOT}/_sidebar.md`);
     if (!res.ok) throw new Error('Sidebar not found');
     const text = await res.text();
     
@@ -233,7 +233,7 @@ async function loadContentFromHash() {
   
   // Get Path
   let path = location.hash.slice(1);
-  if (!path || path === '/') path = '/README.html';
+  if (!path || path === '/') path = 'README.html';
   
   // Normalize
   if (!path.endsWith('.html')) path += '.html';
@@ -244,8 +244,7 @@ async function loadContentFromHash() {
 
   try {
       // Fix relative path issue by stripping leading slash for fetch
-      //const fetchPath = `$/documentation/docs/${state.currentPath}`;
-      const fetchPath = `$/documentation/docs/`;
+      const fetchPath = `${DOCS_ROOT}${state.currentPath}`;
       const res = await fetch(fetchPath);
       
       if (!res.ok) throw new Error('404');
