@@ -1,11 +1,13 @@
 const fs = require("fs");
 const path = require("path");
 
-const dist = path.join(__dirname, "app", "dist");
-const target = __dirname;
+const root = path.resolve(__dirname, "..");
+const dist = path.join(root, "app", "dist");
+const target = root;
 
 // sanity check
 if (!fs.existsSync(dist)) {
+  console.log({target},{dist})
   console.error("❌ dist folder not found.");
   process.exit(1);
 }
