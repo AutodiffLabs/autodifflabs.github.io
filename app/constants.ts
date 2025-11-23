@@ -2,9 +2,8 @@ import { NavItem, CarouselSlide, TimelineEvent, TabOption, ContentData } from '.
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Docs', href: '/docs' },
-  { label: 'Blogs', href: '/Blogs' },
-  { label: 'Models', href: '#models' },
-  { label: 'Research', href: '#research' },
+  { label: 'Models', href: '#models' }, // hugging face
+  { label: 'Research', href: '#research' }, // arvix
   { label: 'GitHub', href: 'https://github.com/AutodiffLabs' },
   { label: 'Projects', href: '#Projects', isSpecial: true },
 ];

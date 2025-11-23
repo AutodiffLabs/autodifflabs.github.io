@@ -1,7 +1,7 @@
 // ------------------------------------------------------------------
 // Configuration
 // ------------------------------------------------------------------
-const DOCS_ROOT = '/docs';
+const DOCS_ROOT = `${window.location.origin}/docs`;
 
 // ------------------------------------------------------------------
 // State
@@ -244,7 +244,8 @@ async function loadContentFromHash() {
 
   try {
       // Fix relative path issue by stripping leading slash for fetch
-      const fetchPath = `${DOCS_ROOT}${state.currentPath}`;
+      const cleanPath = state.currentPath.startsWith('/') ? state.currentPath.slice(1) : state.currentPath;
+      const fetchPath = `${DOCS_ROOT}/${cleanPath}`;
       const res = await fetch(fetchPath);
       
       if (!res.ok) throw new Error('404');
