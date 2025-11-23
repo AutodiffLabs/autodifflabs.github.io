@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const dist = path.join(__dirname, "home", "dist");
+const dist = path.join(__dirname, "app", "dist");
 const target = __dirname;
 
 // sanity check
